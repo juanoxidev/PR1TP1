@@ -18,7 +18,7 @@ public class Categoria {
 		Curso cursoEncontrado = null;
 		int i = 0;
 		
-		while(curso == null || i <= this.cursos.size()) {
+		while(cursoEncontrado == null && i < this.cursos.size()) {
 			curso = this.cursos.get(i);
 			if(curso.getID().equals(idCurso)) {
 				cursoEncontrado = curso;
@@ -30,4 +30,7 @@ public class Categoria {
 		return cursoEncontrado;
 	}
 
+	public void agregarCurso(Curso curso) {
+		this.cursos.add(curso);
+	}
 }

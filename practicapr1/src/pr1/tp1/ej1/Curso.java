@@ -38,7 +38,7 @@ public class Curso {
 		Usuario suscriptoEncontrado = null;
 		int i = 0;
 		
-		while(suscripto == null || i <= this.suscriptos.size()) {
+		while( suscripto == null && i < this.suscriptos.size()) {
 			suscripto = this.suscriptos.get(i);
 			if(suscripto.getID().equals(idUsuario)) {
 				suscriptoEncontrado = suscripto;
