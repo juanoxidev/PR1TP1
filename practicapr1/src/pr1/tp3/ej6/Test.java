@@ -7,7 +7,7 @@ public class Test {
 	public static void main(String[] args) {
 		Taller lodelolo = new Taller();
 		
-		Bicicleta bici1 = new Bicicleta("mitsubishi", "ladetumama", 100);
+		Bicicleta bici1 = new Bicicleta("mitsubishi", "ladetumama", 1100);
 		Bicicleta bici2 = new Bicicleta("mitsubishi", "ladetumama", 5000);
 		Bicicleta bici3 = new Bicicleta("mitsubishi", "ladetumama", 1999);
 		Bicicleta bici4 = new Bicicleta("mitsubishi", "ladetumama", 2001);
