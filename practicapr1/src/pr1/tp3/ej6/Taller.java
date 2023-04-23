@@ -20,6 +20,7 @@ public class Taller {
 		
 		for (Bicicleta bicicleta : bicis) {
 		if(bicicleta.esAdmisible()) {
+			agregarBici(bicicleta);
 			i++;
 		}
 		}

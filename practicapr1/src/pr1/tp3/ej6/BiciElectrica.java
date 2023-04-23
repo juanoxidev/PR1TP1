@@ -13,15 +13,11 @@ public class BiciElectrica extends Bicicleta{
 		return potencia;
 	}
 	
-	public boolean esElectricaAdmisible() {
+	public boolean esAdmisible() {
 		boolean esElectricaAdmisible = false;
-		Bicicleta bici;
 		
-		if(this.potencia <= 250) {
-			bici = this;
-			if(bici.getKilometraje() <= 2000) {
+		if(this.potencia <= 250 && getKilometraje() <= 2000) {
 				esElectricaAdmisible = true;
-			}
 		}
 		
 		return esElectricaAdmisible;

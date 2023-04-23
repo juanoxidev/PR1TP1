@@ -25,13 +25,14 @@ public class Bicicleta {
 		
 		if(this instanceof BiciElectrica) {
 			electrica = (BiciElectrica) this;
-			if(electrica.esElectricaAdmisible()) {
+			if(electrica.esAdmisible()) {
 				esAdmisible = true;
-			} 
-			} else if(this.getKilometraje() <= 2000) {
+			}  
+		} else if(getKilometraje() <= 2000) {
 				esAdmisible = true;
 		}
 				
 		return esAdmisible;
+		}
 	}
-}
+
